@@ -15,7 +15,7 @@
             background: #b3b2c5;
         }
 
-        section.badge {
+        .badge-section {
             background: #5674b9;
             background: radial-gradient(circle closest-side at 80px 50%, #5674b9 0%, #464379 100%);
             border: 4px solid #000;
@@ -30,31 +30,43 @@
             transform: translate(-50%, -50%)
         }
 
-            section.badge img {
-                margin-right: 3em;
-                vertical-align: middle;
-            }
+        .badge-div {
+            display: flex;
+            height: 100%;
+        }
 
-            section.badge .text-easy {
-                font-family: 'WindSong', cursive;
-                font-size: larger;
-                font-weight: 600;
-                margin-right: .3em;
-            }
+        .badge-logo {
+            margin-right: 2.5em;
+        }
 
-            section.badge .text-rhino {
-                font-family: 'Days One', sans-serif;
-            }
+        .badge-div > div {
+            align-items: center;
+            display: flex;
+        }
+
+        .text-easy {
+            font-family: 'WindSong', cursive;
+            font-size: x-large;
+            font-weight: 600;
+            margin-right: .3em;
+        }
+
+        .text-rhino {
+            font-family: 'Days One', sans-serif;
+            font-size: larger;
+            padding-bottom: 1px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
     </div>
-    <section class="badge">
-        <p>
-            <img src="./images/EasyRhino-GH-100x100.png" width="100" height="100" />
-            <span class="text-easy">Easy</span><span class="text-rhino">RHINO</span>
-        </p>
+    <section class="badge-section">
+        <div class="badge-div">
+            <img src="./images/EasyRhino-GH-100x100.png" width="100" height="100" class="badge-logo" />
+            <div class="text-easy">Easy</div>
+            <div class="text-rhino">RHINO</div>
+        </div>
     </section>
 </body>
 </html>
