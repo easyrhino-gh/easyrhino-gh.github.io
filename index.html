@@ -15,13 +15,11 @@
             background: #b3b2c5;
         }
 
-        section.badge {
+        .badge-section {
             background: #5674b9;
             background: radial-gradient(circle closest-side at 80px 50%, #5674b9 0%, #464379 100%);
             border: 4px solid #000;
             border-radius: 1em;
-            color: #ffc424;
-            font-family: 'Noto Sans HK', sans-serif;
             left: 50%;
             margin-right: -50%;
             padding: 1em 2em;
@@ -30,31 +28,46 @@
             transform: translate(-50%, -50%)
         }
 
-            section.badge img {
-                margin-right: 3em;
-                vertical-align: middle;
-            }
+        .badge-div {
+            display: flex;
+            height: 100%;
+        }
 
-            section.badge .text-easy {
-                font-family: 'WindSong', cursive;
-                font-size: larger;
-                font-weight: 600;
-                margin-right: .3em;
-            }
+        .badge-logo {
+            height: 100px;
+            margin-right: 2.5em;
+            width: 100px;
+        }
 
-            section.badge .text-rhino {
-                font-family: 'Days One', sans-serif;
-            }
+        .badge-div > div {
+            align-items: center;
+            color: #ffc424;
+            display: flex;
+        }
+
+        .text-easy {
+            font-family: 'WindSong', cursive;
+            font-size: x-large;
+            font-weight: 600;
+            margin-right: .3em;
+        }
+
+        .text-rhino {
+            font-family: 'Days One', sans-serif;
+            font-size: larger;
+            padding-bottom: 1px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
     </div>
-    <section class="badge">
-        <p>
-            <img src="./images/EasyRhino-GH-100x100.png" width="100" height="100" />
-            <span class="text-easy">Easy</span><span class="text-rhino">RHINO</span>
-        </p>
+    <section class="badge-section">
+        <div class="badge-div">
+            <img src="./images/EasyRhino-GH-100x100.png" class="badge-logo" />
+            <div class="text-easy">Easy</div>
+            <div class="text-rhino">RHINO</div>
+        </div>
     </section>
 </body>
 </html>
